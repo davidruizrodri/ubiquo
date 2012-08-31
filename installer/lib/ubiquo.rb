@@ -15,10 +15,7 @@ module Ubiquo
         # We need this because sometimes we upgrade edge but no stable
         options[:rails] = options[:template] == :edge ? '3.2.8' : '2.3.14'
 
-        spec = Bundler.load_gemspec(File.expand_path('../ubiquo.gemspec', __FILE__)
-        rails = spec
-
-        spec = Bundler.load_gemspec(File.expand_path('../ubiquo.gemspec', __FILE__)
+        spec = Bundler.load_gemspec(File.expand_path('../ubiquo.gemspec', __FILE__))
         rails = spec
 
         unless Gem::Specification::find_by_name('rails', options[:rails])
