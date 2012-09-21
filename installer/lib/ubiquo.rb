@@ -18,6 +18,9 @@ module Ubiquo
         spec = Bundler.load_gemspec(File.expand_path('../ubiquo.gemspec', __FILE__)
         rails = spec
 
+        spec = Bundler.load_gemspec(File.expand_path('../ubiquo.gemspec', __FILE__)
+        rails = spec
+
         unless Gem::Specification::find_by_name('rails', options[:rails])
           $stderr.puts "Sorry ubiquo --#{options[:template]} needs rails -v=#{options[:rails]} to work properly."
           options[:show_help] = true
